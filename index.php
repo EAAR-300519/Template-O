@@ -6,7 +6,8 @@
 
 <body>
     <?php
-        include('./index.html');
+    include('./index.html');
     ?>
 </body>
-<html>
+
+</html>
