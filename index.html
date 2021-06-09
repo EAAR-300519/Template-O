@@ -19,7 +19,11 @@
 </head>
 
 <body>
-    <!-- Hero section Amo a la preciosa y todo este esfuerzo no sería nada sin ella-->
+    <div id="particles-js"></div>
+    <div class="contenedor_loader">
+        <div class="loader"></div>
+    </div>
+    <!-- Hero section Amo la preciosa-->
     <section id="hero" class="text-white tm-font-big tm-parallax">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
@@ -37,16 +41,10 @@
                             <a class="nav-link tm-nav-link" href="#introduction">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#dedication">¿A qué nos dedicamos?</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#work">¿Quiénes Somos?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#contact">Contactanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#">Cotizador</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +90,6 @@
                 </div>
             </div>
 
-            <!-- °°°°°°°°°°°°ESTANDARES DE LA EMPRESA°°°°°°°°°°°° -->
             <div class="row tm-section-pad-top">
                 <div class="col-lg-4">
                     <i class="fas fa-4x fa-paper-plane text-center tm-icon"></i>
@@ -117,87 +114,6 @@
                     </p>
                 </div>
             </div>
-    </section>>
-
-    <section id="dedication" class="tm-section-pad-top tm-parallax-2">
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="text-center col-12">
-                        <h2 class="tm-text-primary tm-section-title mb-4">¿A qué nos dedicamos?</h2>
-                    </div>
-                    <div class="imagen-re">
-                        <a href="img/ccel.jpg">
-                            <figure class="effect-honey-a tm-gallery-item">
-                                <img src="img/ccel.jpg" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 1</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/chivas.png">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/chivas.png" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 2</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/sahara.png">
-                            <figure class="effect-honey-a tm-gallery-item">
-                                <img src="img/sahara.png" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 3</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/pepsi.png">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/pepsi.png" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 4</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/aldo.png">
-                            <figure class="effect-honey-a tm-gallery-item">
-                                <img src="img/aldo.png" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 5</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/Bioderma.jpg">
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/Bioderma.jpg" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 6</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/mirinda.png">
-                            <figure class="effect-honey-a tm-gallery-item">
-                                <img src="img/mirinda.png" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 7</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="img/cotton.png">
-                            <!-- En este caso con las imagenes tenego que poner las que moises me pase -->
-                            <figure class="effect-honey tm-gallery-item">
-                                <img src="img/cotton.png" alt="Image" class="img-fluid">
-                                <figcaption>
-                                    <h2><i>Ejemplo 8</i></h2>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
     </section>
     <section id="work" class="tm-section-pad-top">
         <div class="container tm-container-gallery">
@@ -214,7 +130,7 @@
                     <div class="mx-auto tm-gallery-container">
                         <div class="grid tm-gallery">
                             <a href="img/ccel.jpg">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/ccel.jpg" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>Cuidado Con EL Perro</i></h2>
@@ -222,7 +138,7 @@
                                 </figure>
                             </a>
                             <a href="img/chivas.png">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/chivas.png" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>Chivas</i></h2>
@@ -230,7 +146,7 @@
                                 </figure>
                             </a>
                             <a href="img/sahara.png">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/sahara.png" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>SAHARA</i></h2>
@@ -238,7 +154,7 @@
                                 </figure>
                             </a>
                             <a href="img/pepsi.png">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/pepsi.png" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>Pepsi</i></h2>
@@ -246,7 +162,7 @@
                                 </figure>
                             </a>
                             <a href="img/aldo.png">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/aldo.png" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>Aldo Conti</i></h2>
@@ -254,7 +170,7 @@
                                 </figure>
                             </a>
                             <a href="img/Bioderma.jpg">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/Bioderma.jpg" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>BioDerma</i></h2>
@@ -262,7 +178,7 @@
                                 </figure>
                             </a>
                             <a href="img/mirinda.png">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/mirinda.png" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>Mirinda</i></h2>
@@ -270,7 +186,7 @@
                                 </figure>
                             </a>
                             <a href="img/cotton.png">
-                                <figure class="effect-honey-b tm-gallery-item">
+                                <figure class="effect-honey tm-gallery-item">
                                     <img src="img/cotton.png" alt="Image" class="img-fluid">
                                     <figcaption>
                                         <h2><i>Cotton</i></h2>
@@ -294,7 +210,7 @@
                         <div class="tm-underline-inner"></div>
                     </div>
                     <p class="mb-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam maiores fugit, minima beatae ad quo saepe recusandae optio facere, tenetur magnam necessitatibus veritatis cum? At soluta iste rem eius!
+                        Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui, non tempus sem turpis vitae lorem. Maecenas eget odio in sapien ultrices viverra vitae vel leo. Curabitur at elit eu risus pharetra pellentesque at at velit.
                     </p>
                 </div>
 
@@ -307,7 +223,7 @@
                 <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
                     <a href="mailto:info@company.co" class="tm-contact-item-link">
                         <i class="fas fa-3x fa-envelope mr-4"></i>
-                        <span class="mb-0">ejemplo@orkelim.com</span>
+                        <span class="mb-0">info@company.co</span>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
@@ -318,7 +234,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
                     <form action="" method="get">
-                        <input name="email" type="email" placeholder="Introduzca su correo" class="tm-input" required />
+                        <input name="email" type="email" placeholder="Subscribe your email" class="tm-input" required />
                         <button type="submit" class="btn tm-btn-submit">Enviar</button>
                     </form>
                 </div>
@@ -326,12 +242,13 @@
         </div>
         <footer class="text-center small tm-footer">
             <p class="mb-0">
-                Copyright &copy; Or Kelim Company | Tesca Corporation
+                Copyright &copy; Or Kelim Company
                 <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link"></a>
             </p>
         </footer>
     </section>
     <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/particles.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
