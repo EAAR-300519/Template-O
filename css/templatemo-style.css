@@ -35,7 +35,7 @@ a:focus {
 }
 
 .btn:hover {
-    background-color: #ced4da;
+    background-color: rgb(51, 46, 149);
 }
 
 .tm-section-pad-top {
@@ -75,7 +75,7 @@ a:focus {
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    transition: all 1.5s;
+    transition: all 2.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ a:focus {
     0%,
     80%,
     100% {
-        box-shadow: 0 2.5em 0 -1.3em;
+        box-shadow: 1.5em 2.5em 0 -1.3em;
     }
     40%{
         box-shadow: 0 2.5em 0 0;
@@ -240,7 +240,7 @@ a:focus {
 /* Hero */
 
 #hero {
-    background-image: url(../img/the-town-bg-01.jpg);
+    background-image: url(../img/the-city.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 375px;
@@ -282,7 +282,7 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-    margin-top: 70px;
+    margin-top: -50px;
     overflow: hidden;
 }
 
@@ -290,7 +290,7 @@ a:focus {
     font-size: 5.5rem;
     text-shadow: 2px 2px 2px #333;
     padding-left: 15px;
-    animation: cambiar 5s normal;
+    animation: cambiar 7s normal;
     list-style: none;
     overflow: hidden;
 }
@@ -305,12 +305,12 @@ a:focus {
 
 @keyframes cambiar {
     0%,
-    20%{
+    25%{
         margin-top: 0px;
         /* overflow: hidden; */
     }
-    25%{
-        margin-top: -125px;
+    30%{
+        margin-top: -135px;
     } 
 }
 
@@ -568,8 +568,8 @@ figure.effect-honey:hover h2 i {
 /* Contact */
 
 #contact {
-    color: white;
-    background-image: url(../img/the-town-bg-02.jpg);
+    color: rgb(51, 46, 149);
+    background-image: url(../img/etiquetas-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     min-height: 850px;
@@ -579,7 +579,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-underline {
-    border-top: 2px solid white;
+    border-top: 2px solid rgb(51, 46, 149);
     height: 8px;
     width: 100%;
 }
@@ -587,7 +587,7 @@ figure.effect-honey:hover h2 i {
 .tm-underline-inner {
     width: 25%;
     height: 8px;
-    background: white;
+    background: rgb(51, 46, 149);
 }
 
 .tm-contact-item {
@@ -601,7 +601,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-contact-item-link i,
 .tm-contact-item-link span {
-    color: white;
+    color: rgb(51, 46, 149);
     transition: all 0.3s ease;
 }
 
@@ -613,26 +613,26 @@ figure.effect-honey:hover h2 i {
 .tm-input {
     padding: 8px 25px;
     border-radius: 3px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     background: transparent;
-    color: white;
+    color: rgb(51, 46, 149);
 }
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
+    color: rgb(51, 46, 149);
     opacity: 1;
     /* Firefox */
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: white;
+    color: rgb(51, 46, 149);
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: white;
+    color: rgb(51, 46, 149);
 }
 
 .tm-btn-submit {
@@ -648,7 +648,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-footer-link {
-    color: white;
+    color: rgb(51, 46, 149);
 }
 
 .tm-footer-link:hover,
