@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    color: #8f8f8f;
+    color: #000000;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -201,6 +201,41 @@ a:focus {
     z-index: -1;
 }
 
+/* MOVIMIENTO DE LETRAS */
+
+/* .flum{
+    font-size: 50px;
+    line-height: 40x;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+}
+
+.flum-calisto {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+}
+
+.flum-calisto, .flum-calisto-h2{
+    margin: none;
+}
+
+@keyframes cambiar {
+    0%,
+    20%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -40px;
+    }    
+} */
+
 
 /* Hero */
 
@@ -243,15 +278,40 @@ a:focus {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .tm-hero-text-container-inner {
-    margin-top: -90px;
+    margin-top: 70px;
+    overflow: hidden;
 }
 
 .tm-hero-title {
+    font-size: 5.5rem;
+    text-shadow: 2px 2px 2px #333;
+    padding-left: 15px;
+    animation: cambiar 5s normal;
+    list-style: none;
+    overflow: hidden;
+}
+
+.tm-hero-title-h2 {
     font-size: 3.5rem;
     text-shadow: 2px 2px 2px #333;
+    padding-right: 40px;
+    margin: auto;
+    overflow: hidden;
+}
+
+@keyframes cambiar {
+    0%,
+    20%{
+        margin-top: 0px;
+        /* overflow: hidden; */
+    }
+    25%{
+        margin-top: -115px;
+    } 
 }
 
 .tm-intro-next {
@@ -448,8 +508,8 @@ figure.effect-honey img {
     opacity: 0.9;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 500px;
     height: 220px;
     margin-bottom: 10%;
 }
