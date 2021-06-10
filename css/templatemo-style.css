@@ -141,14 +141,14 @@ a:focus {
 }
 
 .navbar-brand {
-    color: white;
-    font-size: 1.4rem;
+    color: rgb(52, 39, 168);
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-    color: rgb(51, 46, 149);
+    color: white;
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -160,7 +160,21 @@ a:focus {
 }
 
 .tm-nav-link {
-    color: white;
+    
+    padding-top: -50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 46, 149);
+    border-radius: 30px;
+}
+
+li{
+    margin: 5px;
+}
+
+#tam {
+    padding-top: -50px;
+    width: 200px;
+    height: 200px;
 }
 
 .tm-navbar.scroll .tm-nav-link {
@@ -180,7 +194,7 @@ a:focus {
 }
 
 .navbar-toggler-icon {
-    color: white;
+    color: rgb(51, 37, 177);
     padding-top: 6px;
 }
 
@@ -240,7 +254,7 @@ a:focus {
 /* Hero */
 
 #hero {
-    background-image: url(../img/the-city.jpg);
+    background-image: url(../img/etiquetas-1.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 375px;
@@ -297,7 +311,7 @@ a:focus {
 
 .tm-hero-title-h2 {
     font-size: 3.5rem;
-    text-shadow: 2px 2px 2px #333;
+    text-shadow: 3px 3px 3px #333;
     padding-right: 40px;
     margin: auto;
     overflow: hidden;
@@ -305,11 +319,11 @@ a:focus {
 
 @keyframes cambiar {
     0%,
-    25%{
+    30%{
         margin-top: 0px;
         /* overflow: hidden; */
     }
-    30%{
+    35%{
         margin-top: -135px;
     } 
 }
@@ -569,10 +583,10 @@ figure.effect-honey:hover h2 i {
 
 #contact {
     color: rgb(51, 46, 149);
-    background-image: url(../img/etiquetas-1.jpg);
+    background-image: url(../img/etiquetas-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 850px;
+    min-height: 700px;
     position: relative;
     padding-bottom: 50px;
     padding-top: 160px;
@@ -712,7 +726,7 @@ p {
         text-align: right;
     }
     .navbar-collapse {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(51, 46, 149);
         padding: 10px;
         border-radius: 3px;
     }
