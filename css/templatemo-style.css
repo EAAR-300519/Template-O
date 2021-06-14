@@ -148,11 +148,11 @@ a:focus {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .tm-navbar.scroll .navbar-brand {
-    color: #8f8f8f;
+    color: #28218f;
 }
 
 .nav-item {
@@ -178,13 +178,19 @@ li{
 }
 
 .tm-navbar.scroll .tm-nav-link {
-    color: #8f8f8f;
+    color: #ffffff;
 }
 
-.tm-navbar.scroll .tm-nav-link:hover,
+/* .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-    color: rgb(51, 46, 149);
+    color: rgb(255, 255, 255);
+    font-weight: 10px;
+} */
+
+.nav-link:hover{
+    color: white;
+    font-size: 30px;
 }
 
 .navbar-toggler {
