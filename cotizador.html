@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--
 	The Town
 	https://templatemo.com/tm-525-the-town
@@ -25,61 +27,60 @@
     <!-- <section id="hero" class="text-white tm-font-big tm-parallax"> -->
     <!-- Navigation -->
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md tm-navbar-2" id="tmNav">
-        <div class="container">
-            <div class="tm-next">
-                <a href="#hero" class="navbar-brand">Or Kelim</a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars navbar-toggler-icon"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link tm-nav-link" href="#introduction">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link tm-nav-link" href="#productos">Nuestros Productos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <!-- °°°°°°°°PANTALLA DE INICIO°°°°°°°° -->
 
-    <section id="introduction" class="tm-section-pad-top">
-        <div class="container">
+    <section id="productos" class="tm-section-pad-top">
+        <div class="container tm-container-gallery">
             <div class="row">
-                <div class="col-lg-6">
-                    <img src="img/or-kelim.png" alt="Image" class="img-fluid tm-intro-img" />
-                </div>
-                <div class="col-lg-6">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title-1">Barniz a Registro</h2>
-                        <p class="mb-4 tm-intro-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, dolorum animi illo
-                            rem
-                            saepe placeat eligendi, qui maxime suscipit ipsam dignissimos. Laboriosam fugit expedita
-                            neque atque. Necessitatibus, impedit consectetur.
-                        </p>
-                        <p class="mb-5 tm-intro-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo quas officiis nobis
-                            totam, quam nam illum placeat necessitatibus natus quibusdam accusantium eum commodi
-                            dicta
-                            similique? Quas vel quis nesciunt?
-                        <div class="tm-next">
-                            <a href="cotizador.html" class="tm-intro-text tm-btn-primary">Cotizar</a>
-                        </div>
-                    </div>
+                <div class="text-center col-12">
+                    <!-- <h2 class="tm-text-primary tm-section-title mb-4">Productos</h2> -->
                 </div>
             </div>
+
+            <h2>Cotizador de Productos</h2>
+
+            <div style="width: 99%;">
+                <form id="form1" method="POST" action="enviar.php">
+                    <label>Nombre Completo</label>
+                    <input type="text" name="nombre" class="form-control" required>
+
+                    <label>Puesto</label>
+                    <input type="text" name="puesto" class="form-control">
+
+                    <label>Empresa</label>
+                    <input type="text" name="empresa" class="form-control" required>
+
+
+                    <label>Etiqueta que se desea cotizar</label>
+                    <select name="area" class="form-control" placeholder="Etiquetas...">
+                        <option value="etiqueta">Barniz a Registro</option>
+                        <option value="etiqueta1">Plastificado Brillante</option>
+                        <option value="etiqueta2">Plastificado Mate</option>
+                        <option value="etiqueta3">Impresión Digital</option>
+                        <option value="etiqueta4">Serigrafía</option>
+                        <option value="etiqueta5">Hot Stamping</option>
+                        <option value="etiqueta6">Offset</option>
+                    </select>
+
+                    <label>Número de Etiquetas (Se maneja un mínimo de 5,000 etiquetas)</label>
+                    <input type="number" name="etiquetas-numero" class="form-control" required>
+
+                    <label>Correo Electrónico</label>
+                    <input type="email" name="edad" class="form-control" required>
+
+                    <br />
+                    <button type="submit" class="btn btn-primary">
+                        Cotizar
+                    </button>
+            </div>
+
+            </form>
+
     </section>
 
 
-    <!-- Contact Angel cara de cola-->
+    <!--************************************* Contact Angel cara de cola *************************************-->
     <section id="contact-1" class="tm-section-pad-top tm-parallax-2">
         <div class="container tm-container-contact">
             <div class="row">
@@ -132,6 +133,9 @@
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <script>
         function getOffSet() {
             var _offset = 450;
