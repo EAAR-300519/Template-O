@@ -18,7 +18,7 @@ $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
 $message = "Este mensaje fue enviado por: " . $nombre . " \r\n";
-$message = "Empresa: " . $empresa . " \r\n";
+$message .= "Empresa: " . $empresa . " \r\n";
 $message .= "Su e-mail es: " . $correo . " \r\n";
 $message .= "Telefono de contacto: " . $numero . " \r\n";
 $message .= "Tipo de etiqueta a cotizar: " . $area . " \r\n";
