@@ -41,15 +41,15 @@
             <h2>Cotizador de Productos</h2>
 
             <div style="width: 99%;">
-                <form id="form1" method="POST" action="enviar.php">
+                <form action="form/enviar.php" id="form1" method="POST">
                     <label>Nombre Completo</label>
-                    <input type="text" name="nombre" class="form-control" required>
+                    <input type="text" name="nombre" class="form-control" required placeholder="Nombre Completo...">
 
                     <label>Puesto</label>
-                    <input type="text" name="puesto" class="form-control">
+                    <input type="text" name="puesto" class="form-control" placeholder="Puesto...">
 
                     <label>Empresa</label>
-                    <input type="text" name="empresa" class="form-control" required>
+                    <input type="text" name="empresa" class="form-control" required placeholder="Empresa...">
 
 
                     <label>Etiqueta que se desea cotizar</label>
@@ -63,17 +63,19 @@
                         <option value="etiqueta6">Offset</option>
                     </select>
 
-                    <label>Número de Etiquetas (Se maneja un mínimo de 5,000 etiquetas)</label>
-                    <input type="number" name="etiquetas" class="form-control" required>
+                    <label>Número de Etiquetas</label>
+                    <input type="number" name="etiquetas" class="form-control" required
+                        placeholder="(Se maneja un mínimo de 5,000 etiquetas)">
 
                     <label>Correo Electrónico</label>
-                    <input type="email" name="correo" class="form-control" required>
+                    <input type="email" name="correo" class="form-control" required placeholder="Correo Electrónico...">
 
                     <label>Teléfono</label>
-                    <input type="tel" name="numero" class="form-control" required>
+                    <input type="tel" name="numero" class="form-control" required placeholder="Teléfono...">
 
                     <label>Comentarios Adicionales</label>
-                    <textarea name="mensaje" id="mensaje" rows="8" class="form-control"></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="8" class="form-control"
+                        placeholder="Observaciones..."></textarea>
 
                     <br />
                     <button type="submit" class="btn btn-primary">
