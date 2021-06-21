@@ -41,7 +41,7 @@
             <h2>Cotizador de Productos</h2>
 
             <div style="width: 99%;">
-                <form action="form/enviar.php" id="form1" method="POST">
+                <form action="php/enviar.php" id="form1" method="POST">
                     <label>Nombre Completo</label>
                     <input type="text" name="nombre" class="form-control" required placeholder="Nombre Completo...">
 
@@ -52,26 +52,39 @@
                     <input type="text" name="empresa" class="form-control" required placeholder="Empresa...">
 
 
-                    <label>Etiqueta que se desea cotizar</label>
-                    <select name="area" class="form-control">
-                        <option value="etiqueta">Barniz a Registro</option>
-                        <option value="etiqueta1">Plastificado Brillante</option>
-                        <option value="etiqueta2">Plastificado Mate</option>
+                    <br>
+                    <label> Tipo de Etiquetas a Cotizar</label>
+                    <select name="_combo" id="combo" required>
+                        <!-- Opciones de la lista -->
+                        <option value="Barniz a Registro">Barniz a Registro</option>
+                        <option value="Plastificado Brillante">Plastificado Brillante</option>
+                        <option value="Plastificado Mate">Plastificado Mate</option>
                         <option value="etiqueta3">Impresión Digital</option>
                         <option value="etiqueta4">Serigrafía</option>
                         <option value="etiqueta5">Hot Stamping</option>
                         <option value="etiqueta6">Offset</option>
                     </select>
 
-                    <label>Número de Etiquetas</label>
-                    <input type="number" name="etiquetas" class="form-control" required
-                        placeholder="(Se maneja un mínimo de 5,000 etiquetas)">
+                    <br>
+                    <label> Número de Etiquetas</label>
+                    <select name="etiquetas" id="etiquetas" required>
+                        <!-- Opciones de la lista -->
+                        <option value="1">100,000</option>
+                        <option value="2">150,000</option>
+                        <option value="3">200,000 o más</option>
+                        <option value="4">300,000 o más</option>
+                        <option value="5">400,000 o más</option>
+                        <option value="6">500,000 o más</option>
+                        <option value="7">600,000 o más</option>
+                    </select>
+                    <input type="text" name="etiquetas" class="form-control"
+                        placeholder="(Especificación de número de etiquetas opcional)">
 
                     <label>Correo Electrónico</label>
-                    <input type="email" name="correo" class="form-control" required placeholder="Correo Electrónico...">
+                    <input type="email" name="correo" class="form-control" required placeholder="ejemplo@gmail.com">
 
                     <label>Teléfono</label>
-                    <input type="tel" name="numero" class="form-control" required placeholder="Teléfono...">
+                    <input type="tel" name="numero" class="form-control" required placeholder="(55-12345678)">
 
                     <label>Comentarios Adicionales</label>
                     <textarea name="mensaje" id="mensaje" rows="8" class="form-control"
@@ -88,7 +101,7 @@
     </section>
 
 
-    <!--************************************* Contact Angel cara de cola *************************************-->
+    <!--************************************* Contact *************************************-->
     <section id="contact-1" class="tm-section-pad-top tm-parallax-2">
         <div class="container tm-container-contact">
             <div class="row">
