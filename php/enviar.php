@@ -20,10 +20,10 @@ $header .= "Content-Type: text/plain";
 $message = "Este mensaje fue enviado por: " . $nombre . " \r\n";
 $message = "Empresa: " . $empresa . " \r\n";
 $message .= "Su e-mail es: " . $correo . " \r\n";
-$message .= "Teléfono de contacto: " . $numero . " \r\n";
+$message .= "Telefono de contacto: " . $numero . " \r\n";
 $message .= "Tipo de etiqueta a cotizar: " . $area . " \r\n";
 $message .= "Cantidad de etiquetas a cotizar: " . $etiquetas . " \r\n";
-$message .= "Comentarios sobre cotización: " . $mensaje . " \r\n";
+$message .= "Comentarios sobre cotizacion: " . $mensaje . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 
