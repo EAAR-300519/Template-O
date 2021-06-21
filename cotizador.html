@@ -53,7 +53,7 @@
 
 
                     <label>Etiqueta que se desea cotizar</label>
-                    <select name="area" class="form-control" placeholder="Etiquetas...">
+                    <select name="area" class="form-control">
                         <option value="etiqueta">Barniz a Registro</option>
                         <option value="etiqueta1">Plastificado Brillante</option>
                         <option value="etiqueta2">Plastificado Mate</option>
@@ -64,10 +64,16 @@
                     </select>
 
                     <label>Número de Etiquetas (Se maneja un mínimo de 5,000 etiquetas)</label>
-                    <input type="number" name="etiquetas-numero" class="form-control" required>
+                    <input type="number" name="etiquetas" class="form-control" required>
 
                     <label>Correo Electrónico</label>
-                    <input type="email" name="edad" class="form-control" required>
+                    <input type="email" name="correo" class="form-control" required>
+
+                    <label>Teléfono</label>
+                    <input type="tel" name="numero" class="form-control" required>
+
+                    <label>Comentarios Adicionales</label>
+                    <textarea name="mensaje" id="mensaje" rows="8" class="form-control"></textarea>
 
                     <br />
                     <button type="submit" class="btn btn-primary">
@@ -75,7 +81,7 @@
                     </button>
             </div>
 
-            </form>
+        </div>
 
     </section>
 
@@ -111,11 +117,11 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-                    <form action="" method="get">
+                    <!-- <form action="" method="get">
                         <input name="email" type="email" placeholder="Introduzca su email" class="tm-input i-color"
                             required />
                         <button type="submit" class="btn tm-btn-submit">Enviar</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
