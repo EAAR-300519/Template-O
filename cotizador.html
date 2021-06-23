@@ -31,7 +31,7 @@
     <!-- °°°°°°°°PANTALLA DE INICIO°°°°°°°° -->
 
     <section id="productos" class="tm-section-pad-top">
-        <div class="container tm-container-gallery">
+        <div class="container tm-container-gallery pickle">
             <div class="row">
                 <div class="text-center col-12">
                     <!-- <h2 class="tm-text-primary tm-section-title mb-4">Productos</h2> -->
@@ -41,21 +41,31 @@
             <h2>Cotizador de Productos</h2>
 
             <div style="width: 99%;">
+
                 <form action="php/enviar.php" id="form1" method="POST">
                     <label>Nombre Completo</label>
-                    <input type="text" name="nombre" class="form-control" required placeholder="Nombre Completo...">
+                    <input type="text" name="nombre" class="form-control shadow mb-2 bg-white rounded" required
+                        placeholder="Nombre Completo...">
 
                     <label>Puesto</label>
-                    <input type="text" name="puesto" class="form-control" placeholder="Puesto...">
+                    <input type="text" name="puesto" class="form-control shadow mb-2 bg-white rounded"
+                        placeholder="Puesto...">
 
                     <label>Empresa</label>
-                    <input type="text" name="empresa" class="form-control" required placeholder="Empresa...">
+                    <input type="text" name="empresa" class="form-control shadow mb-2 bg-white rounded" required
+                        placeholder="Empresa...">
 
 
                     <br>
-                    <label> Tipo de Etiquetas a Cotizar</label>
-                    <select name="_combo" id="combo" required>
+
+
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" style="margin: 5px;" for="combo">Tipo de Etiquetas a
+                            Cotizar</label>
+                    </div>
+                    <select class="custom-select " name="_combo" id="combo" required>
                         <!-- Opciones de la lista -->
+                        <option disabled selected>Selecciona un Servicio</option>
                         <option value="Barniz a Registro">Barniz a Registro</option>
                         <option value="Plastificado Brillante">Plastificado Brillante</option>
                         <option value="Plastificado Mate">Plastificado Mate</option>
@@ -66,9 +76,14 @@
                     </select>
 
                     <br>
-                    <label> Número de Etiquetas</label>
-                    <select name="etiquetas" id="etiquetas" required>
+
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" style="margin: 5px;" for="etiquetas">Número de
+                            Etiquetas</label>
+                    </div>
+                    <select class="custom-select" name="etiquetas" id="etiquetas" required>
                         <!-- Opciones de la lista -->
+                        <option disabled selected>Selecciona una cantidad</option>
                         <option value="100,000 - 150,000">100,000 - 150,000</option>
                         <option value="200,000 - 250,000">200,000 - 250,000</option>
                         <option value="300,000 - 350,000">300,000 - 350,000</option>
@@ -78,22 +93,29 @@
                         <option value="Mas">Más</option>
                     </select>
 
+
                     <br />
                     <br />
                     <label>Correo Electrónico</label>
-                    <input type="email" name="correo" class="form-control" required placeholder="ejemplo@gmail.com">
+                    <input type="email" name="correo" class="form-control shadow mb-2 bg-white rounded" required
+                        placeholder="ejemplo@gmail.com">
 
                     <label>Teléfono</label>
-                    <input type="tel" name="numero" class="form-control" required placeholder="(55-12345678)">
+                    <input type="tel" name="numero" class="form-control shadow mb-2 bg-white rounded" required
+                        placeholder="(55-12345678)">
 
                     <label>Comentarios Adicionales</label>
-                    <textarea name="mensaje" id="mensaje" rows="8" class="form-control"
+                    <textarea name="mensaje" id="mensaje" rows="8" class="form-control shadow mb-2 bg-white rounded"
                         placeholder="Observaciones... Si es necesario, especifíque que otros requerimeintos necesita"></textarea>
 
                     <br />
-                    <button type="submit" class="btn btn-primary">
-                        Cotizar
-                    </button>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" style="margin: 1em;" class="btn-primary btn-block btn-lg">
+                            Cotizar
+                        </button>
+
+                    </div>
+                </form>
             </div>
 
         </div>
@@ -209,11 +231,7 @@
                 "background-attachment": "fixed"
             });
             $(window).scroll(function () {
-                var firstTop = $object.offset().top,
-                    pos = $(window).scrollTop(),
-                    yPos = Math.round((multiplier * (firstTop - pos)) - 186);
-
-                var bg_css = 'center ' + yPos + 'px';
+                var firstTop = $object.offset().top
 
                 $object.css({
                     "background-position": bg_css

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Or Kelim | Page</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="{% static '/fontawesome-5.5/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static '/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static '/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static '/magnific-popup/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/templatemo-style.css' %}" />
     <!--
 	The Town
 	https://templatemo.com/tm-525-the-town
@@ -82,7 +83,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="img/or-kelim.png" alt="Image" class="img-fluid tm-intro-img" />
+                    <img src="{% static '/img/or-kelim.png' %}" alt="Image" class="img-fluid tm-intro-img" />
                 </div>
                 <div class="col-lg-6">
                     <div class="tm-intro-text-container">
@@ -106,205 +107,131 @@
 
     <!--********************** EJEMPLO **********************-->
     <!--************* PARTE 1 **************-->
+    <div class="d-flex justify-content-center">
 
-    <section id="productos" class="tm-section-pad-top">
-        <div class="container tm-container-gallery">
-            <div class="row">
-                <div class="text-center col-12">
-                    <h2 class="tm-text-primary tm-section-title mb-4">Nuestros Productos</h2>
-                </div>
-            </div>
 
-            <div class="card-deck">
-                <div class="card">
-                    <a href="compra_1.html">
-                        <img class="card-img-top" src="img/ccel.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Barniz a Registro</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a
-                            natural
-                            lead-in
-                            to
-                            additional
-                            content. This content is a little bit longer.</p>
+        <section id="productos" class="tm-section-pad-top">
+            <div class="container tm-container-gallery ">
+                <div class="row">
+                    <div class="text-center col-12">
+                        <h2 class="tm-text-primary tm-section-title mb-4">Nuestros Productos</h2>
+                        <p>Seleccione una imagen para su cotización</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/ccel.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Plastificado Brillante</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to
-                            additional
-                            content.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/ccel.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Plastificado Mate</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional
-                            content. This card has even longer content than the first to show that equal
-                            height
-                            action.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <!--************* PARTE 2 **************-->
-
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="../Template-O/img/ccel.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Impresión Digital</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to
-                            additional
-                            content. This content is a little bit longer.</p>
+                <div class="card-deck">
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_1.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Barniz a Registro</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in
+                                to
+                                additional
+                                content. This content is a little bit longer.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/ccel.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Serigrafía</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to
-                            additional
-                            content.</p>
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_2.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Plastificado Brillante</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to
+                                additional
+                                content.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/ccel.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Hot Stamping</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional
-                            content. This card has even longer content than the first to show that equal
-                            height
-                            action.
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- ******************** AQUI TERMINA EL EJEMPLO ******************** -->
-
-    <!-- <section id="work" class="tm-section-pad-top" data-ride="carousel">
-        <div class="container tm-container-gallery">
-            <div class="row">
-                <div class="text-center col-12">
-                    <h2 class="tm-text-primary tm-section-title mb-4">¿Quiénes Somos?</h2>
-                    <p class="mx-auto tm-work-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolorum iure provident deserunt
-                        cum consequatur a impedit optio mollitia, vero odit explicabo quidem voluptatibus fugiat,
-                        corrupti debitis vel consequuntur nobis?
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="mx-auto tm-gallery-container">
-                        <div class="grid tm-gallery">
-                            <a href="img/ccel.jpg">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/ccel.jpg" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Cuidado Con EL Perro</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/chivas.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/chivas.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Chivas</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/sahara.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/sahara.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>SAHARA</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/pepsi.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/pepsi.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Pepsi</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/aldo.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/aldo.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Aldo Conti</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/Bioderma.jpg">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/Bioderma.jpg" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>BioDerma</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/mirinda.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/mirinda.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Mirinda</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/cotton.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/cotton.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Cotton</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/cotton.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/cotton.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Weeknd</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/mossimo.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/mossimo.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Mossimo</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="img/contempo.png">
-                                <figure class="effect-honey tm-gallery-item">
-                                    <img src="img/contempo.png" alt="Image" class="img-fluid">
-                                    <figcaption>
-                                        <h2><i>Contempo</i></h2>
-                                    </figcaption>
-                                </figure>
-                            </a>
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_3.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Plastificado Mate</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional
+                                content. This card has even longer content than the first to show that equal
+                                height
+                                action.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section> -->
+
+                <!--************* PARTE 2 **************-->
+
+                <div class="card-deck">
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_4.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Impresión Digital</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional
+                                content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_5.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Serigrafía</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to
+                                additional
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_6.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Stamping</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional
+                                content. This card has even longer content than the first to show that equal
+                                height
+                                action.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-deck">
+                    <div class="card" style="max-width: 300px;">
+                        <a href="compra_7.html">
+                            <img class="card-img-top" src="{% static '/img/ccel.jpg' %}" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Offset</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of
+                                the
+                                card's
+                                content.</p>
+                        </div>
+                    </div>
+
+
+
+        </section>
+
+
+    </div>
+
+
+    <!-- ******************** AQUI TERMINA EL EJEMPLO ******************** -->
 
 
     <!--****************** EJEMPLO DE IAMGENES DE EMPRESAS A COLABORAR *************-->
@@ -332,19 +259,39 @@
                     <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
                     <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
                     <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleSlidesOnly" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleSlidesOnly" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleSlidesOnly" data-slide-to="7"></li>
+                    <li data-target="#carouselExampleSlidesOnly" data-slide-to="8"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-10" src="img/png's/aldo.png" alt="First slide">
+                        <img class="d-block w-10" src="{% static '/img/pngs/aldo.png' %}" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-10" src="img/png's/cceperro.png" alt="Second slide">
+                        <img class="d-block w-10" src="{% static '/img/pngs/cceperro.png' %}" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-10" src="img/png's/contempo.png" alt="Third slide">
+                        <img class="d-block w-10" src="{% static '/img/pngs/contempo.png' %}" alt="Third slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="w-10" src="img/png's/cotton.png" alt="Fourth slide">
+                        <img class="d-block w-10" src="{% static 'img/pngs/cotton.png' %}" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-10" src="{% static 'img/chivas.png' %}" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-10" src="{% static '/img/pngs/silver_plate.png' %}" alt="Sixth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-10" src="{% static '/img/ck.png' %}" alt="Seventh slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-10" src="{% static '/img/pngs/mirinda.png' %}" alt="Eighth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-10" src="{% static '/img/pngs/harvard.png' %}" alt="Nineth slide">
                     </div>
                 </div>
             </div>
@@ -406,13 +353,13 @@
             </p>
         </footer>
     </section>
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static '/js/jquery-1.9.1.min.js' %}"></script>
+    <script src="{% static '/js/particles.min.js' %}"></script>
+    <script src="{% static '/js/app.js' %}"></script>
+    <script src="{% static '/slick/slick.min.js' %}"></script>
+    <script src="{% static '/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static '/js/jquery.singlePageNav.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
     <script>
         function getOffSet() {
             var _offset = 450;
