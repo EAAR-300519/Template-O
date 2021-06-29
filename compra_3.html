@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Or Kelim | Page</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="{% static '/fontawesome-5.5/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static '/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static '/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static '/magnific-popup/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/templatemo-style.css' %}" />
     <!--
 	The Town
 	https://templatemo.com/tm-525-the-town
@@ -54,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="img/or-kelim.png" alt="Image" class="img-fluid tm-intro-img" />
+                    <img src="{% static '/img/or-kelim.png' %}" alt="Image" class="img-fluid tm-intro-img" />
                 </div>
                 <div class="col-lg-6">
                     <div class="tm-intro-text-container">
@@ -71,7 +72,7 @@
                             dicta
                             similique? Quas vel quis nesciunt?
                         <div class="tm-next">
-                            <a href="cotizador.html" class="tm-intro-text tm-btn-primary tmg">Cotizar</a>
+                            <a href="cotizador/" class="tm-intro-text tm-btn-primary tmg">Cotizar</a>
                         </div>
                     </div>
                 </div>
@@ -118,13 +119,13 @@
             </p>
         </footer>
     </section>
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static '/js/jquery-1.9.1.min.js' %}"></script>
+    <script src="{% static '/js/particles.min.js' %}"></script>
+    <script src="{% static '/js/app.js' %}"></script>
+    <script src="{% static '/slick/slick.min.js' %}"></script>
+    <script src="{% static '/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static '/js/jquery.singlePageNav.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
     <script>
         function getOffSet() {
             var _offset = 450;

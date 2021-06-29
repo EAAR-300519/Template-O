@@ -27,8 +27,8 @@ $message .= "Comentarios sobre cotizacion: " . $mensaje . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 
-$para = 'recklessmoney3@gmail.com';
-$asunto = 'Mensaje de Prueba';
+$para = 'Clients@orkelim.com';
+$asunto = 'Nueva Cotizacion';
 
 @mail($para, $asunto, utf8_decode($message), $header);
 
