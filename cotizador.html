@@ -41,7 +41,8 @@
 
             <div style="width: 99%;">
 
-                <form id="form1" method="POST">{% csrf_token %}
+                <form id="form1" method="POST">
+                    {% csrf_token %}
                     <label>Nombre Completo</label>
                     <input type="text" name="nombre" class="form-control shadow mb-2 bg-white rounded" required
                         placeholder="Nombre Completo...">
@@ -178,7 +179,7 @@
                         <label class="input-group-text" style="margin: 5px;" for="combo">Tipo de Etiquetas a
                             Cotizar</label>
                     </div>
-                    <select class="custom-select " name="_combo" id="combo" required>
+                    <select class="custom-select " name="combo" id="combo" required>
                         <!-- Opciones de la lista -->
 
                         <option disabled selected>Selecciona un Servicio</option>
