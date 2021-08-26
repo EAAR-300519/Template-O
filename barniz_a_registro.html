@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Or Kelim | Page</title>
+    <link rel="stylesheet" href="./static/fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="./static/slick/slick.css">
+    <link rel="stylesheet" href="./static/slick/slick-theme.css">
+    <link rel="stylesheet" href="./static/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/templatemo-style.css" />
+    <!--
+	The Town
+	https://templatemo.com/tm-525-the-town
+	-->
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar navbar-expand-md tm-navbar-2">
+        <div class="container">
+            <div class="tm-next">
+                <a href="" class="navbar-brand">Or Kelim</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="/">Nuestros
+                            Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- °°°°°°°°PANTALLA DE INICIO°°°°°°°° -->
+
+    <section id="introduction" class="tm-section-pad-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="{% static '/img/or-kelim.png' %}" alt="Image" class="img-fluid tm-intro-img" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title-1">Barniz a Registro</h2>
+                        <p class="mb-4 tm-intro-text">
+                            El barniz a registro es una capa transparente brillante que se aplica solo en las zonas que
+                            quieras resaltar por un
+                            sistema de impresión conocido como serigrafía. Este barniz logra hacer que el contenido
+                            debajo de ella resalte del resto
+                            de la impresión, otorgando una apariencia más brillante a los colores y una textura de
+                            relieve.
+                        </p>
+                        <p class="mb-5 tm-intro-text">
+                            Así se obtiene un
+                            acabado elegante y atractivo ya que lo hace rico al tacto y a los ojos.
+                        <div class="tm-next">
+                            <a href="/cotizador" class="tm-intro-text tm-btn-primary tmg">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Contact Angel cara de cola-->
+    <section id="contact-1" class="tm-section-pad-top tm-parallax-2">
+        <div class="container tm-container-contact">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4 tm-section-title">Contactanos</h2>
+                    <div class="mb-5 tm-underline">
+                        <div class="tm-underline-inner"></div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+                    <a href="tel:56 1449 4738" class="tm-contact-item-link">
+                        <i class="fas fa-3x fa-phone mr-4"></i>
+                        <span class="mb-0">56 1449 4738</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+                    <a href="mailto:Clients@orkelim.com" class="tm-contact-item-link">
+                        <i class="fas fa-3x fa-envelope mr-4"></i>
+                        <span class="mb-0">Clients@orkelim.com</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+                    <a href="https://goo.gl/maps/B8TNSLiherc9mvYWA" class="tm-contact-item-link">
+                        <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
+                        <span class="mb-0">Nuestra ubicación</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center small tm-footer">
+            <p class="mb-0">
+                Copyright &copy; Tesca Corporation Company
+                <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link"></a>
+            </p>
+        </footer>
+    </section>
+    <script src="./static/js/jquery-1.9.1.min.js"></script>
+    <script src="./static/js/particles.min.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/slick/slick.min.js"></script>
+    <script src="./static/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="./static/js/jquery.singlePageNav.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script>
+        function getOffSet() {
+            var _offset = 450;
+            var windowHeight = window.innerHeight;
+
+            if (windowHeight > 500) {
+                _offset = 400;
+            }
+            if (windowHeight > 680) {
+                _offset = 300
+            }
+            if (windowHeight > 830) {
+                _offset = 210;
+            }
+
+            return _offset;
+        }
+
+        function setParallaxPosition($doc, multiplier, $object) {
+            var offset = getOffSet();
+            var from_top = $doc.scrollTop(),
+                bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+            $object.css({
+                "background-position": bg_css
+            });
+        }
+
+        // Parallax function
+        // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+        var background_image_parallax = function ($object, multiplier, forceSet) {
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            // $object.css({"background-attatchment" : "fixed"});
+
+            if (forceSet) {
+                setParallaxPosition($doc, multiplier, $object);
+            } else {
+                $(window).scroll(function () {
+                    setParallaxPosition($doc, multiplier, $object);
+                });
+            }
+        };
+
+        var background_image_parallax_2 = function ($object, multiplier) {
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            $object.css({
+                "background-attachment": "fixed"
+            });
+        }
+
+
+        $(function () {
+            // Hero Section - Background Parallax
+            background_image_parallax($(".tm-parallax"), 0.30, false);
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                background_image_parallax($(".tm-parallax"), 0.30, true);
+            }, true);
+
+            // Detect window scroll and update navbar
+            $(window).scroll(function (e) {
+                if ($(document).scrollTop() > 120) {
+                    $('.tm-navbar').addClass("scroll");
+                } else {
+                    $('.tm-navbar').removeClass("scroll");
+                }
+            });
+
+            // Close mobile menu after click 
+            $('#tmNav a').on('click', function () {
+                $('.navbar-collapse').removeClass('show');
+            })
+
+            // Scroll to corresponding section with animation
+            $('#tmNav').singlePageNav();
+
+            // Add smooth scrolling to all links
+            // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 400, function () {
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            // Pop up
+            $('.tm-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+
+            // Gallery
+            $('.tm-gallery').slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                responsive: [{
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+
+</html>
