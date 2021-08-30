@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 
 <head>
-    
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -41,7 +40,7 @@
 
             <div style="width: 99%;">
 
-                
+
                 <form action="./static/php/enviar.php" method="POST">
 
                     <label>Nombre Completo</label>
@@ -231,44 +230,44 @@
 
                     <br />
                     <div class="d-flex justify-content-center">
-                        
-                        <script >
 
-                            
+                        <script>
+
+
                             function boton() {
-                        
+
                                 Swal.fire({
                                     position: 'top-end',
-                                    type:'warning',
+                                    type: 'warning',
                                     title: 'Espere estamos enviando sus datos.....',
                                     showConfirmButton: false,
                                     timer: 3500
-                                    
-                                }) 
-                                
+
+                                })
+
                                 setTimeout(() => {
                                     Swal.fire({
                                         position: 'top-end',
-                                        type:'success',
+                                        type: 'success',
                                         title: 'Sus datos se enviaron correctamente',
                                         showConfirmButton: false,
                                         timer: 3500
-                                        
-                                      }) 
+
+                                    })
                                 }, 3500);
-                                
+
                             };
 
-                            
-                              
+
+
                         </script>
-                        
-                        <button onclick="boton()" type="submit" style="margin: 1em;" id="miCotizador" 
+
+                        <button onclick="boton()" type="submit" style="margin: 1em;" id="miCotizador"
                             class="btn-primary btn-block btn-lg">
                             Cotizar
                         </button>
 
-                        
+
                     </div>
                     <!-- <div class="d-flex justify-content-end">
                         <button type="submit" style="margin: 1em; " class="btn-primary btn-lg">
@@ -278,8 +277,8 @@
                     </div> -->
                 </form>
                 <div></div>
-                
-                
+
+
             </div>
 
         </div>
@@ -306,9 +305,9 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-                    <a href="mailto:Clients@orkelim.com" class="tm-contact-item-link">
+                    <a href="mailto:clients@orkelim.com" class="tm-contact-item-link">
                         <i class="fas fa-3x fa-envelope mr-4"></i>
-                        <span class="mb-0">Clients@orkelim.com</span>
+                        <span class="mb-0">clients@orkelim.com</span>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
@@ -345,7 +344,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>.
     <script>
-   
+
 
 
         $('#subbmitcotizador').click(function () {
