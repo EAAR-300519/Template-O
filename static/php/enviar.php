@@ -28,8 +28,8 @@ $message .= "Comentarios sobre cotizacion: " . $mensaje . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time()); */
 /* $to = "recklessmoney3@gmail.com"; */
 $to = "noreplyorkelim@gmail.com";
-/* $destino2 = "alejandrocamperoupvm@gmail.com"; */
-$subject = "Clients@orkelim.com";
+$destino2 = "Clients@orkelim.com";
+$subject = "Cotizacion OrKelim";
 
 /* $Aceptacion = "Uso Exlusivo" . $exclusive . "\nSolicitud de informacion: " . $informacion . "Reporte de Pruebas Rapidas: " . $reporte; */
 
