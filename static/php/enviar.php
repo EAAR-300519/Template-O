@@ -27,9 +27,9 @@ $message .= "Cantidad de etiquetas a cotizar: " . $etiquetas . " \r\n";
 $message .= "Comentarios sobre cotizacion: " . $mensaje . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time()); */
 /* $to = "recklessmoney3@gmail.com"; */
-$to = "alejandrocamperoupvm@gmail.com";
+$to = "noreplyorkelim@gmail.com";
 /* $destino2 = "alejandrocamperoupvm@gmail.com"; */
-$subject = "Cotizacion OrKelim";
+$subject = "Clients@orkelim.com";
 
 /* $Aceptacion = "Uso Exlusivo" . $exclusive . "\nSolicitud de informacion: " . $informacion . "Reporte de Pruebas Rapidas: " . $reporte; */
 
